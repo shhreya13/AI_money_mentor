@@ -1,8 +1,5 @@
 # 💰 AI Money Mentor
-
-> India's first free AI-powered personal finance mentor — built with Claude AI.
-
----
+AI Money Mentor is an intelligent financial assistant that helps users plan, manage, and optimize their finances in one place. It offers tools like Money Health Score, FIRE Planner, Tax Optimization, and investment analysis to deliver personalized, real-time financial guidance — making financial planning accessible, simple, and free for everyone.
 
 ## ✨ Features
 
