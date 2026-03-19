@@ -1,0 +1,17 @@
+{
+  "name": "ai-money-mentor",
+  "version": "1.0.0",
+  "description": "AI Money Mentor – Full-stack personal finance advisor for India",
+  "private": true,
+  "scripts": {
+    "install:backend":  "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all":      "npm run install:backend && npm run install:frontend",
+    "migrate":          "cd backend && node db/migrate.js",
+    "setup":            "npm run install:all && cd backend && node -e \"const fs=require('fs'); if(!fs.existsSync('.env')) fs.copyFileSync('.env.example','.env'); console.log('Created .env — add your ANTHROPIC_API_KEY');\" && npm run migrate",
+    "dev:backend":      "cd backend && node --watch server.js",
+    "dev:frontend":     "cd frontend && npm run dev",
+    "build":            "cd frontend && npm run build",
+    "start":            "cd backend && node server.js"
+  }
+}

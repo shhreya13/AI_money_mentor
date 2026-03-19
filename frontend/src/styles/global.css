@@ -1,0 +1,57 @@
+/* src/styles/global.css */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --ink:      #0f0e0c;
+  --paper:    #f5f0e8;
+  --cream:    #ede8dc;
+  --gold:     #c9a84c;
+  --gold-dim: rgba(201,168,76,0.15);
+  --rust:     #b84c2a;
+  --forest:   #2a5c45;
+  --sky:      #2a4a6b;
+  --purple:   #5c3d8f;
+  --teal:     #14726e;
+  --muted:    #7a7060;
+  --border:   #d8d0bc;
+  --card:     #faf7f2;
+  --success:  #2a5c45;
+  --error:    #b84c2a;
+  --radius:   16px;
+  --radius-sm:8px;
+  --shadow:   0 2px 24px rgba(15,14,12,.08);
+  --shadow-lg:0 8px 48px rgba(15,14,12,.14);
+  --transition: 0.22s ease;
+  font-family: 'DM Sans', sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  font-size: 15px;
+}
+
+body { background: var(--paper); min-height: 100vh; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; }
+input, select, textarea { font-family: inherit; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 8px; }
+
+/* Animations */
+@keyframes fadeUp   { from{opacity:0;transform:translateY(14px)} to{opacity:1;transform:none} }
+@keyframes fadeIn   { from{opacity:0} to{opacity:1} }
+@keyframes spin     { to{transform:rotate(360deg)} }
+@keyframes pulse    { 0%,100%{opacity:1} 50%{opacity:.4} }
+@keyframes shimmer  { from{background-position:-200% 0} to{background-position:200% 0} }
+
+.animate-fadeUp { animation: fadeUp 0.4s ease both; }
+.animate-fadeIn { animation: fadeIn 0.3s ease both; }
+
+/* Layout helpers */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 28px; }
+.container-sm { max-width: 800px; margin: 0 auto; padding: 0 28px; }
+
+/* Typography */
+.font-display { font-family: 'DM Serif Display', serif; }
+.font-syne    { font-family: 'Syne', sans-serif; }
