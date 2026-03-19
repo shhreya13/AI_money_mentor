@@ -179,5 +179,4 @@ All return `event: chunk` / `event: done` / `event: error` SSE messages.
 
 ---
 
-## ⚠️ Disclaimer
-AI-generated financial advice is for informational purposes only. Consult a SEBI-registered investment advisor for personalised decisions.
+
